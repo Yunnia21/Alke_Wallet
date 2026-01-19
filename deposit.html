@@ -36,51 +36,32 @@
         </nav>       
     </header>
    
-        <!--<div class="container" id="depositContainer">
-            <h1>Depositar</h1>
-            <form id="formDeposito">
-                <div class="mb-3">
-                    <label for="amount" class="form-label">Ingrese el monto a depositar</label>
-                    <input type="number" class="form-control" id="amount">
-                </div>
-                <div class="d-flex gap-2">
-                    <button type="submit" class="btn btn-primary flex-grow-1" id="btnDepositar">Depositar</button>                    
-                </div>
-                    <p id="msg" class="text-success mt-2"></p>
-                <div>
-                    <h2>Saldo actual:</h2>
-                    <p id="saldo">$0</p>
-                </div>
-            </form>
-        </div>-->
-        <section>
-      <div class="container text-bg-dark tarjeta-saldo">
-        <div class="card">
-          <div class="card-header">Bienvenido, <span id="nombre"></span> </div>
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">Tu saldo actual es:</p>
-            <div class="mx-auto text-center">
-              <h3 id="saldo">$0</h3>
+       <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <section class="card shadow">
+                    <div class="card-body p-4">
+                        <h2 class="text-center mb-4">Depositar Fondos</h2>
+                        <div id="alert-placeholder"></div>
+                        <form id="formDeposito">
+                            <div class="mb-4 text-center">
+                                <p class="text-muted">Tu saldo actual es:</p>
+                                <h3 class="text-success fw-bold" id="saldo">$</h3>
+                            </div>
+                            <div class="mb-3">
+                                <label for="amount" class="form-label">Monto a depositar</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input type="number" id="amount" class="form-control" placeholder="0" min="1" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-2">Confirmar Depósito</button>
+                        </form>
+                    </div>
+                </section>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <br>
-    <section>
-      <div class="container div-seccion text-bg-dark">
-        <h2>Depositar</h2>
-        <form id="formDeposito">
-          <div class="form-group">
-            <label for="amount">Monto a depositar:</label>
-            <input type="number" class="form-control" id="amount" placeholder="Ingrese monto">
-          </div>
-          <button type="submit" class="btn btn-light">Realizar depósito</button>
-        </form>
-      </div>
-    </section>
-
+    </main>
 
 
  

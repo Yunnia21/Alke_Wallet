@@ -31,7 +31,87 @@
             </div>
         </nav>       
     </header>
-    
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <section class="card shadow">
+                    <div class="card-body p-4">
+                        <h2 class="text-center mb-4">Transferir</h2>
+                        <div id="alert-placeholder"></div>
+                        <!--<form id="formTransferencia">-->
+                            <div class="mb-4 text-center">
+                                <p class="text-muted">Tu saldo actual es:</p>
+                                <h3 class="text-success fw-bold" id="saldo">$</h3>
+                            </div>                            
+                            <div class="mb-3">
+                                <label for="sendMoney" class="form-label">Monto a Transferir</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input type="number" id="sendMoney" class="form-control" placeholder="0" min="1">                                    
+                                </div>                                
+                            </div>
+                            <div>
+                                <label for="nuevoItem" class="form-label">Nuevo Contacto</label><br>
+                                <input type="text" id="nuevoItem" class="form-control" placeholder="Nombre Contacto Nuevo"><br> 
+                                <button class="btn btn-primary w-100 py-2" id="agregar">Agregar</button>                              
+                            </div>
+                            <div>
+                                <label for="lista" class="form-label">Contactos Guardados</label><br> 
+                                <select id="lista"></select><br> 
+                                <span id="saludo" style="margin-left:10px;"></span><br>                              
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-2">Confirmar Transferencia</button>
+                        <!--</form>-->
+                    </div>
+                </section>
+            </div>
+        </div>        
+    </main>
+    <!--<div class="container mt-4" id="pagina">
+        <h2>Transferir</h2>
+        <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Enviar a Contacto
+            </button>
+            <button class="btn btn-success" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample">
+                Crear Nuevo Contacto
+            </button>
+        </p>
+        <div style="min-height: 120px">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 300px;">
+                    <form action="" id="sendMoneyForm">
+                        <div class="mb-3">
+                            <label for="contact" class="form-label">Seleccionar contacto</label>
+                            <select class="form-select" id="contact">
+                                <option value="">Elija un contacto</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="amount" id="amountLabel" class="form-label">Monto a enviar</label>
+                            <input type="number" class="form-control" id="amount" placeholder="Ingrese el monto en pesos">
+                        </div>
+                        <button type="submit" class="btn btn-primary me-1 ">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                <div class="card card-body" style="width: 300px;">
+                    <form id="newContactForm">
+                        <div class="mb-3 mt-4">
+                            <label class="form-label">Nombre del nuevo contacto</label>
+                            <input type="text" class="form-control" id="nombre">                                                  
+                            <button type="submit" class="btn btn-success mt-3" id="guardarContacto">Guardar contacto</button>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+        </div>-->
+       
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="script.js"></script>
 </body>
