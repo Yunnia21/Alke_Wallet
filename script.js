@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Transferencia exitosa!\nContacto: ' + contactoSeleccionado + '\nMonto: $' + monto + '\nSaldo restante: $' + saldo);
     });
     if ($('#tabla').length) {
-        localStorage.getItem("tabla")
-        
+        actualizarTablaTransferencias();
+
     }    
 });
