@@ -23,7 +23,9 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="deposit.html">Depositar</a></li>
                                     <li><a class="dropdown-item" href="sendmoney.html">Transferir</a></li>
-                                    <li><a class="dropdown-item" href="transactions.html">Historial de Transacciones</a></li>                                    
+                                    <li><a class="dropdown-item" href="transactions.html">Historial de Transacciones</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item" href="menu.html">Ir a la Página Principal</a></li>                                    
                                 </ul>
                         </li>        
                     </ul>
@@ -32,7 +34,7 @@
             </div>
         </nav>       
     </header>
-    <div class="card" style="width: 18rem;">
+    <!--<div class="card" style="width: 18rem;">
         <div class="card mb-4 shadow-sm">
             <div class="card-body text-center">
                 <p class="text-secondary mb-1">Saldo disponible</p>
@@ -45,7 +47,33 @@
             <a href="sendmoney.html" class="card-link">Transferir</a><br>
             <a href="transactions.html" class="card-link">Historial de Transacciones</a><br>    
         </div>
-    </div>
+    </div>-->
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <section class="card shadow">
+                    <div class="card-body p-4">
+                        <h2 class="text-center mb-4">Saldo Disponible</h2>
+                        <div id="alert-placeholder"></div>
+                        <form id="formDeposito">
+                            <div class="mb-4 text-center">
+                                <p class="text-muted">Tu saldo actual es:</p>
+                                <h3 class="text-success fw-bold" id="saldo">$</h3>
+                            </div>
+                            <div class="mb-3">
+                               <h5 class="card-title">Opciones</h5>    
+                                <a href="deposit.html" class="card-link">Depositar</a><br>
+                                <a href="sendmoney.html" class="card-link">Transferir</a><br>
+                                <a href="transactions.html" class="card-link">Historial de Transacciones</a><br> 
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-2">Confirmar Depósito</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="script.js"></script>
 </body>
